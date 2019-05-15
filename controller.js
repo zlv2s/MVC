@@ -20,7 +20,8 @@ class Controller {
 
   clickHandler(target) {
     this.model.heading = 'I changed'
-    target.innerText = this.getModelHeading()
+    // target.innerText = this.getModelHeading()
+    this.model.notifyAll()
   }
 
 }
