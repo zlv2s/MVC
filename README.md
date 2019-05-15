@@ -1,3 +1,2 @@
 # MVC
-a simple MVC
-implement MVC with vanilla JS
+a simple MVC implemented with vanilla JS
