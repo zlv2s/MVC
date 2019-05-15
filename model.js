@@ -1,7 +1,16 @@
 class Model {
   constructor() {
-    this.heading = 'Click to change'
+    let heading = 'Click to change'
     this.observers = []
+    Object.defineProperty(this, 'heading', {
+      get() {
+        return heading
+      },
+      set(value) {
+        heading = value
+        this.notifyAll()
+      }
+    })
   }
   registerObserver(observer) {
     this.observers.push(observer)

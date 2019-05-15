@@ -15,13 +15,14 @@ class Controller {
   }
 
   getModelHeading() {
+    console.log(this.model)
     return this.model.heading
   }
 
   clickHandler(target) {
     this.model.heading = 'I changed'
     // target.innerText = this.getModelHeading()
-    this.model.notifyAll()
+    // this.model.notifyAll()
   }
 
 }
